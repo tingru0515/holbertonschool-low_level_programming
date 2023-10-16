@@ -4,10 +4,10 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
-* main - print if the last digit is greater than 5, is zero, or is less than 6 but not 0
+* main - print if the last digit is greater than 5 or not
 *
 * Description: using main function
-* this program prints "The Last digit is greater than 5, is zero, or is less than 6 but not 0"
+* this program prints "The Last digit is greater than 5 or not"
 * Return: 0
 */
 int main(void)
