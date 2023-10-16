@@ -4,7 +4,11 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
-* betty function
+* main - print if the number is positive, zero, or negative
+*
+* Description: using the main function
+* this program prints "Programmimg is positive, zero, or negative"
+* Return: 0
 */
 int main(void)
 {
