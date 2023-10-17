@@ -8,11 +8,13 @@ all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
 
 clean:
-	$(RM) *~ $(NAME)
+	-@$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) $(OBJ)
+	-@$(RM) $(OBJ)
 
 fclean: clean oclean
 
-re: fclean all
+re:
+	-@$(MAKE) fclean
+	-@$(MAKE) all
