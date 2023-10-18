@@ -15,7 +15,5 @@ oclean:
 
 fclean: clean oclean
 
-re:
-	@$(MAKE) fclean
-	@$(MAKE) all
+re: fclean all $(OBJ)
 
