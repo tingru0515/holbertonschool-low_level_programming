@@ -4,23 +4,21 @@
 * @str: the string
 * Return: character
 */
-char *leet(char *str)
+char *leet(char *s)
 {
-	int i1 = 0, i2;
-	char leet[8] = {'0', 'L', '?', 'E', 'A', '?', '?', 'T'};
+	int i, j;
+	char a[] = "aAeEoOtTlL";
+	char b[] = "4433007711";
 
-	while (str[i1])
+	for (i = 0; *(s + i); i++)
 	{
-		for (i2 = 0; i2 <= 7; i2++)
+		for (j = 0; j <= 9; j++)
 		{
-			if (str[i1] == leet[i2] || str[i1] - 32 == leet[i2])
+			if (a[j] == s[i])
 			{
-				str[i1] = i2 + '0';
+				s[i] = b[j];
 			}
 		}
-
-		i1++;
 	}
-
-	return (str);
+	return (s);
 }
