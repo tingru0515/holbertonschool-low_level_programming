@@ -17,7 +17,7 @@ int check_prime(int a, int b)
 	}
 	else
 	{
-		return (check(a + 1, b));
+		return (check_prime(a + 1, b));
 	}
 }
 /**
